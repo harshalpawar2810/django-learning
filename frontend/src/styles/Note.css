@@ -1,0 +1,60 @@
+/* Container for individual notes */
+.note-container {
+    padding: 15px 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .note-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the note title */
+  .note-title {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Styling for the note content */
+  .note-content {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for the note date */
+  .note-date {
+    color: #999;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the delete button */
+  .delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f; /* Darker red */
+    transform: translateY(-2px);
+  }
+  
+  .delete-button:active {
+    background-color: #b71c1c; /* Even darker red */
+    transform: translateY(0);
+  }
+  

@@ -1,0 +1,48 @@
+/* Container for centering the loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for vertical centering */
+}
+
+/* Loader styling */
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Reduced duration for a smoother spin */
+}
+
+/* Keyframes for spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Additional loader variants for styling options */
+.loader.small {
+  width: 30px;
+  height: 30px;
+  border-width: 3px;
+}
+
+.loader.large {
+  width: 70px;
+  height: 70px;
+  border-width: 7px;
+}
+
+.loader.red {
+  border-top: 5px solid #e74c3c; /* Red */
+}
+
+.loader.green {
+  border-top: 5px solid #2ecc71; /* Green */
+}
